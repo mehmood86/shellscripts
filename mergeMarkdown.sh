@@ -1,5 +1,5 @@
 #!/bin/bash
-
+cd tmp
 for filename in "*.md"
 do
     sed -i '/### SEE ALSO/Q' $filename
@@ -10,3 +10,4 @@ for filename in "chemotion_*.md";
 do
     cat $filename >> "docs.md"
 done
+cd ..
