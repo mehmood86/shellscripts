@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cd tmp
-for filename in "*.md"
+for filename in $(ls *.md)
 do
     sed -i '/### SEE ALSO/Q' $filename
 done
