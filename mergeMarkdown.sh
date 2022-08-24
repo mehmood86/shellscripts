@@ -1,12 +1,12 @@
 #!/bin/bash
 
 for filename in "*.md"
-  do    
+do
     sed -i '/### SEE ALSO/Q' $filename
-  done
+done
 
-echo "\n# Chemotion CLI\n" > "chemotion.md"
-for filename in "*.md"; 
-  do
-    cat "$filename" >> "docs.md"  
-  done
+echo "\n# Chemotion CLI\n" > "docs.md"
+for filename in "chemotion_*.md";
+do
+    cat $filename >> "docs.md"
+done
