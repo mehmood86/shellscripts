@@ -12,3 +12,5 @@ do
     cat $filename >> "docs.md"
 done
 cd ..
+
+rm -R tmp
